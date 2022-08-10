@@ -13,7 +13,7 @@ while True:
     while anahtar == 1:
      message = input("What is your message to server? : ")
      clientsocket.send(bytes(message, "utf-8"))
-     print("Your message is succesfully sended!")
+     print("Your message is succesfully sent!")
      msg = s.recv(1024)
      print(msg.decode("utf-8"))
      continue
